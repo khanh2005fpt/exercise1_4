@@ -3,6 +3,7 @@ import ProductTable from './components/ProductTable';
 import ProductStats from './components/ProductStats';
 import ProductSortedList from './components/ProductSortedList';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
 function App() {
   // Dữ liệu đầu vào theo đề bài
   const [products] = useState([
@@ -13,7 +14,7 @@ function App() {
   ]);
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif', maxWidth: '800px', margin: '0 auto' }}>
+    <Container style={{ padding: '20px' }}>
       
       <section style={{ marginBottom: '30px' }}>
         <h3>1. Danh sách sản phẩm & Trạng thái</h3>
@@ -29,7 +30,7 @@ function App() {
         <h3>3. Sắp xếp danh sách theo lợi nhuận giảm dần</h3>
         <ProductSortedList products={products} />
       </section>
-    </div>
+    </Container>
   );
 }
 
