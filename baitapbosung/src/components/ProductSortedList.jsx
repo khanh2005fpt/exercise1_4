@@ -10,7 +10,7 @@ function ProductSortedList({ products }) {
   return (
     <table border="1" cellPadding="10" cellSpacing="0" style={{ width: '100%', borderCollapse: 'collapse' }}>
       <thead>
-        <tr style={{ backgroundColor: '#f2f2f2' }}>
+        <tr style={{ backgroundColor: '#f2f2f2', textAlign: 'center' }}>
           <th>ID</th>
           <th>Tên sản phẩm</th>
           <th>Giá nhập</th>
