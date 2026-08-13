@@ -7,6 +7,7 @@ import Exercise6 from './exercise6/Exercise6';
 import Exercise7 from './exercise7/Exercise7';
 import Exercise8 from './exercise8/Exercise8';
 import Exercise9 from './exercise9/Exercise9';
+import Exercise10 from './exercise10/Exercise10';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/exercise7" element={<Exercise7 />} />
         <Route path="/exercise8" element={<Exercise8 />} />
         <Route path="/exercise9" element={<Exercise9 />} />
+        <Route path="/exercise10" element={<Exercise10 />} />
       </Routes>
     </BrowserRouter>
   );
